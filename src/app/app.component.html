@@ -1,0 +1,79 @@
+<!-- <h1>ngSwitch</h1>
+<p>sirve para evitar el uso de multiples sentencias *ngIf</p> -->
+<!-- <h1>*ngFor</h1>
+<input class="form-control" type="text" required [(ngModel)]="p_nombre">
+<input type="text" required [(ngModel)]="p_imagen">
+<input type="number" required [(ngModel)]="p_precio">
+<button class="btn btn-primary" (click)="agregarProducto()">Agregar</button> -->
+
+<h2>PRODUCTOS</h2>
+<div class="row">
+    <div class="col-3" *ngFor="let producto of productos">
+        <img [src]="producto.imagen" height="200px" alt="imagen">
+        <h3>{{ producto.nombre }}</h3>
+        <p>Precio: {{ producto.precio }}</p>
+    </div>
+</div>
+
+
+<!-- <input type="text" required [(ngModel)]="o_nombre">
+<input type="text" required [(ngModel)]="o_apellido">
+<input type="number" required [(ngModel)]="o_edad">
+<button (click)="agregarPersona()">Agregar</button>
+<table>
+    <thead>
+        <tr>
+            <th>NOMBRE</th>
+            <th>APELLIDOS</th>
+            <th>EDAD</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let per of personas; index as i">
+            <td>{{ per.nombre }}</td>
+            <td>{{ per.apellido }}</td>
+            <td>{{ per.edad }}</td>
+            <td><button (click)="eliminarPersona(i)">Eliminar</button></td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<input type="text" required [(ngModel)]="name">
+<button (click)="agregarNombre()">Agregar</button>
+<ul>
+    <li *ngFor="let nombre of nombres; index as i">
+        {{ i }} - {{ nombre }}
+        <button (click)="eliminarNombre(i)">Eliminar</button>
+    </li>
+</ul>
+<h1>*ngIf</h1>
+<p *ngIf="btn">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo accusantium quam facere eveniet in voluptas blanditiis cum, impedit, veniam molestias recusandae ex ratione maiores quas quasi, sit modi qui voluptates!</p>
+<h1>NG MODEL</h1>
+<input type="text" [(ngModel)]="persona.nombre">
+<input type="email" required #apellidoInput="ngModel" [(ngModel)]="persona.apellido">
+<p>Valido: {{ apellidoInput.valid }}</p>
+<h1>EVENT BINDING</h1>
+<button [disabled]="btn">Enviar</button>
+<button (click)="cambioBoton()">Cambio</button>
+<button (click)="incrementaEdad()">Incrementa Edad</button>
+<div>
+    <p>Edad: {{ persona.edad }}</p>
+    <input type="text" [value]="persona.nombre" (keyup)="cambioNombre($event)">
+</div>
+<div class="box" (scroll)="onScroll($event)">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consequatur aut velit, dignissimos doloribus placeat in cupiditate explicabo corrupti at labore veritatis expedita, culpa provident est ex hic ipsum animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nisi odio natus ipsam nostrum non. Assumenda maxime fugit hic est dolorum impedit omnis. Aspernatur necessitatibus quidem quo, voluptatem dolorem veniam?</p>
+</div>
+<h1>PROPERTY BINDING</h1>
+<button [disabled]="btn">Enviar</button>
+<img [src]="imag" height="100px" alt="imagen">
+<div>
+    <input type="text" [value]="persona.nombre">
+    <input type="text" [value]="persona.apellido">
+    <progress max="50" [value]="persona.edad"></progress>
+    <img [src]="persona.imagen" height="100px" alt="imagen">
+</div>
+<h1>Hola mundo... nuevamente</h1>
+<h2>{{ titulo.repeat(3) }}</h2>
+<p>la suma de 5 + 8 es: {{ 5 + 8 }}</p>
+<img src={{imag}} alt="imagen"> -->
